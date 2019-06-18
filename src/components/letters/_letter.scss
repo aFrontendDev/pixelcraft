@@ -1,0 +1,311 @@
+
+.letter {
+  display: grid;
+  height: 150px;
+  width: 120px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.letter--p {
+  grid-template-areas:
+  ".     a2-1  a3-1  a4-1  a5-1  a6-1  a7-1  ."
+  "a1-2  a2-2  a3-2  a4-2  a5-2  a6-2  a7-2  a8-2"
+  "a1-3  a2-3  a3-3  .     .     a6-3  a7-3  a8-3"
+  "a1-4  a2-4  a3-4  .     .     a6-4  a7-4  a8-4"
+  "a1-5  a2-5  a3-5  a4-5  a5-5  a6-5  a7-5  a8-5"
+  "a1-6  a2-6  a3-6  a4-6  a5-6  a6-6  a7-6  ."
+  "a1-7  a2-7  a3-7  .     .     .     .     ."
+  "a1-8  a2-8  a3-8  .     .     .     .     ."
+  "a1-9  a2-9  a3-9  .     .     .     .     ."
+  "a1-10 a2-10 a3-10 .     .     .     .     ."
+  ;
+}
+
+.letter--x {
+    grid-template-areas:
+    "a1-1  a2-1  a3-1  .     .     a6-1  a7-1  a8-1"
+    "a1-2  a2-2  a3-2  .     .     a6-2  a7-2  a8-2"
+    "a1-3  a2-3  a3-3  .     .     a6-3  a7-3  a8-3"
+    "a1-4  a2-4  a3-4  .     .     a6-4  a7-4  a8-4"
+    ".     a2-5  a3-5  a4-5  a5-5  a6-5  a7-5  ."
+    ".     a2-6  a3-6  a4-6  a5-6  a6-6  a7-6  ."
+    "a1-7  a2-7  a3-7  .     .     a6-7  a7-7  a8-7"
+    "a1-8  a2-8  a3-8  .     .     a6-8  a7-8  a8-8"
+    "a1-9  a2-9  a3-9  .     .     a6-9  a7-9  a8-9"
+    "a1-10 a2-10 a3-10 .     .     a6-10 a7-10 a8-10"
+    ;
+}
+
+
+
+.letter div {
+  background-color: red;
+}
+
+.letter .a1-1 {
+  grid-area: a1-1;
+}
+.letter .a1-2 {
+  grid-area: a1-2;
+}
+.letter .a1-3 {
+  grid-area: a1-3;
+}
+.letter .a1-4 {
+  grid-area: a1-4;
+}
+.letter .a1-5 {
+  grid-area: a1-5;
+}
+.letter .a1-6 {
+  grid-area: a1-6;
+}
+.letter .a1-7 {
+  grid-area: a1-7;
+}
+.letter .a1-8 {
+  grid-area: a1-8;
+}
+.letter .a1-9 {
+  grid-area: a1-9;
+}
+.letter .a1-10 {
+  grid-area: a1-10;
+}
+
+
+
+.letter .a2-1 {
+  grid-area: a2-1;
+}
+.letter .a2-2 {
+  grid-area: a2-2;
+}
+.letter .a2-3 {
+  grid-area: a2-3;
+}
+.letter .a2-4 {
+  grid-area: a2-4;
+}
+.letter .a2-5 {
+  grid-area: a2-5;
+}
+.letter .a2-6 {
+  grid-area: a2-6;
+}
+.letter .a2-7 {
+  grid-area: a2-7;
+}
+.letter .a2-8 {
+  grid-area: a2-8;
+}
+.letter .a2-9 {
+  grid-area: a2-9;
+}
+.letter .a2-10 {
+  grid-area: a2-10;
+}
+
+
+
+.letter .a3-1 {
+  grid-area: a3-1;
+}
+.letter .a3-2 {
+  grid-area: a3-2;
+}
+.letter .a3-3 {
+  grid-area: a3-3;
+}
+.letter .a3-4 {
+  grid-area: a3-4;
+}
+.letter .a3-5 {
+  grid-area: a3-5;
+}
+.letter .a3-6 {
+  grid-area: a3-6;
+}
+.letter .a3-7 {
+  grid-area: a3-7;
+}
+.letter .a3-8 {
+  grid-area: a3-8;
+}
+.letter .a3-9 {
+  grid-area: a3-9;
+}
+.letter .a3-10 {
+  grid-area: a3-10;
+}
+
+
+
+
+.letter .a4-1 {
+  grid-area: a4-1;
+}
+.letter .a4-2 {
+  grid-area: a4-2;
+}
+.letter .a4-3 {
+  grid-area: a4-3;
+}
+.letter .a4-4 {
+  grid-area: a4-4;
+}
+.letter .a4-5 {
+  grid-area: a4-5;
+}
+.letter .a4-6 {
+  grid-area: a4-6;
+}
+.letter .a4-7 {
+  grid-area: a4-7;
+}
+.letter .a4-8 {
+  grid-area: a4-8;
+}
+.letter .a4-9 {
+  grid-area: a4-9;
+}
+.letter .a4-10 {
+  grid-area: a4-10;
+}
+
+
+
+.letter .a5-1 {
+  grid-area: a5-1;
+}
+.letter .a5-2 {
+  grid-area: a5-2;
+}
+.letter .a5-3 {
+  grid-area: a5-3;
+}
+.letter .a5-4 {
+  grid-area: a5-4;
+}
+.letter .a5-5 {
+  grid-area: a5-5;
+}
+.letter .a5-6 {
+  grid-area: a5-6;
+}
+.letter .a5-7 {
+  grid-area: a5-7;
+}
+.letter .a5-8 {
+  grid-area: a5-8;
+}
+.letter .a5-9 {
+  grid-area: a5-9;
+}
+.letter .a5-10 {
+  grid-area: a5-10;
+}
+
+
+
+
+.letter .a6-1 {
+  grid-area: a6-1;
+}
+.letter .a6-2 {
+  grid-area: a6-2;
+}
+.letter .a6-3 {
+  grid-area: a6-3;
+}
+.letter .a6-4 {
+  grid-area: a6-4;
+}
+.letter .a6-5 {
+  grid-area: a6-5;
+}
+.letter .a6-6 {
+  grid-area: a6-6;
+}
+.letter .a6-7 {
+  grid-area: a6-7;
+}
+.letter .a6-8 {
+  grid-area: a6-8;
+}
+.letter .a6-9 {
+  grid-area: a6-9;
+}
+.letter .a6-10 {
+  grid-area: a6-10;
+}
+
+
+
+
+
+.letter .a7-1 {
+  grid-area: a7-1;
+}
+.letter .a7-2 {
+  grid-area: a7-2;
+}
+.letter .a7-3 {
+  grid-area: a7-3;
+}
+.letter .a7-4 {
+  grid-area: a7-4;
+}
+.letter .a7-5 {
+  grid-area: a7-5;
+}
+.letter .a7-6 {
+  grid-area: a7-6;
+}
+.letter .a7-7 {
+  grid-area: a7-7;
+}
+.letter .a7-8 {
+  grid-area: a7-8;
+}
+.letter .a7-9 {
+  grid-area: a7-9;
+}
+.letter .a7-10 {
+  grid-area: a7-10;
+}
+
+
+
+
+.letter .a8-1 {
+  grid-area: a8-1;
+}
+.letter .a8-2 {
+  grid-area: a8-2;
+}
+.letter .a8-3 {
+  grid-area: a8-3;
+}
+.letter .a8-4 {
+  grid-area: a8-4;
+}
+.letter .a8-5 {
+  grid-area: a8-5;
+}
+.letter .a8-6 {
+  grid-area: a8-6;
+}
+.letter .a8-7 {
+  grid-area: a8-7;
+}
+.letter .a8-8 {
+  grid-area: a8-8;
+}
+.letter .a8-9 {
+  grid-area: a8-9;
+}
+.letter .a8-10 {
+  grid-area: a8-10;
+}
