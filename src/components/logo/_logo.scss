@@ -1,4 +1,15 @@
 @import "@/styles/_variables.scss";
 
+$letterHeight: 100px;
+
 .logo {
+}
+
+.para {
+  --letter-height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  height: var(--letter-height);
+  width: calc(var(--letter-height) * 5);
 }

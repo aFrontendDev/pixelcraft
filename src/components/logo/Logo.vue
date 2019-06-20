@@ -1,6 +1,19 @@
 <template>
   <div class="logo">
-    <Letter letter="p" />
+    <div class="para">
+      <Letter letter="p" />
+      <Letter letter="i" />
+      <Letter letter="x" />
+      <Letter letter="e" />
+      <Letter letter="l" />
+    </div>
+    <div class="para">
+      <Letter letter="c" />
+      <Letter letter="r" />
+      <Letter letter="a" />
+      <Letter letter="f" />
+      <Letter letter="t" />
+    </div>
   </div>
 </template>
 
