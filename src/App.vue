@@ -21,6 +21,17 @@ export default {
   components: {
     Nav,
     Footer
+  },
+  mounted() {
+    this.methodReady();
+  },
+  methods: {
+    methodReady: () => {
+      setTimeout(
+        () => document.documentElement.classList.add("page-ready"),
+        500
+      );
+    }
   }
 };
 </script>

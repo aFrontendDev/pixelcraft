@@ -20,7 +20,13 @@ export default {
     },
     className: letter => {
       return `letter letter--${letter}`;
+    },
+    transComplete: () => {
+      document.documentElement.classList.add("letters-completed");
     }
+  },
+  mounted() {
+    setTimeout(() => this.transComplete(), 2000);
   }
 };
 </script>
