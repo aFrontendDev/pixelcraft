@@ -161,12 +161,8 @@
 
 
 .letter .block {
-  background-color: rgb(74, 117, 238);
-  transition: background-color 200ms ease-in-out;
-
-  &:hover {
-    background-color: rgb(57, 228, 41);
-  }
+  background-color: #0a91e0;
+  box-shadow: 4px 4px 0px 0px #d7da19;
 }
 
 .letter .a1-1 {

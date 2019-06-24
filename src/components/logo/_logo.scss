@@ -1,8 +1,10 @@
-@import "@/styles/_variables.scss";
-
 $letterHeight: 100px;
 
 .logo {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .para {
