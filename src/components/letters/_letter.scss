@@ -6,6 +6,8 @@
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(10, 1fr);
   margin: 0 1.5%;
+  color: $blue;
+  transition: color 200ms ease-in-out;
 }
 
 .letter--p {
@@ -162,7 +164,7 @@
 
 .letter .block {
   display: flex;
-  background-color: $blue;
+  background-color: currentColor;
   transform: translateX(50px);
   opacity: 0;
 

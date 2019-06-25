@@ -1,5 +1,5 @@
 <template>
-  <div :class="className(letter)">
+  <div :class="className(letter)" ref="letter" v-on:click="clickEvent">
     <div
       v-for="n in 80"
       v-bind:key="makeKey(n)"
@@ -30,18 +30,34 @@ export default {
     transComplete: () => {
       document.documentElement.classList.add("letters-completed");
     },
-    mouseover: e => {
-      const el = e.target;
-      const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-      el.style.backgroundColor = `#${randomColor}`;
+    mouseover: function(e) {
+      if (this.isDesktop()) {
+        const el = e.target;
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        el.style.backgroundColor = `#${randomColor}`;
 
-      setTimeout(() => {
-        el.removeAttribute("style");
-      }, 5000);
+        setTimeout(() => {
+          el.removeAttribute("style");
+        }, 5000);
+      }
+    },
+    clickEvent: function() {
+      if (!this.isDesktop()) {
+        const letter = this.$refs.letter;
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        letter.style.color = `#${randomColor}`;
+      }
+    },
+    isDesktop: () => {
+      // We're making an assumption that anything at or below 1024 is tablet or mobile
+      // it's a guess but it's fine for this
+      return window.innerWidth > 1024;
     }
   },
   mounted() {
-    setTimeout(() => this.transComplete(), 2350);
+    setTimeout(() => {
+      this.transComplete();
+    }, 2350);
   }
 };
 </script>
