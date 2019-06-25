@@ -162,7 +162,7 @@
 
 .letter .block {
   display: flex;
-  // background-color: #0a91e0;
+  background-color: $blue;
   transform: translateX(50px);
   opacity: 0;
 
@@ -172,29 +172,23 @@
       $delay: random(1000);
       $timer: random(750);
       $posX: random(15);
-      $transX: translateX(-#{$posX}px);
-      $transY: translateY(-#{$posX}px);
+      $transX: -#{$posX}px;
+      $transY: -#{$posX}px;
 
       @if ($posX % 2 == 0) {
-        $transX: translateX(#{$posX}px);
+        $transX: #{$posX}px;
       }
 
       @if ($ii % 2 == 0) {
-        $transY: translateY(#{$posX}px);
+        $transY: #{$posX}px;
       }
 
       &[class*="a#{$i}-#{$ii}"] {
-        transform: $transX $transY;
+        transform: translate($transX, $transY);
         transition: opacity 100ms, transform #{$timer}ms linear;
         transition-delay: #{$delay}ms;
       }
     }
-  }
-
-  .block__inner {
-    flex: 1;
-    background-color: $blue;
-    transition: background-color 200ms ease-in-out;
   }
 
   .page-ready & {
@@ -203,7 +197,7 @@
   }
 
   .letters-completed & {
-    transition: box-shadow 1250ms ease-in-out;
+    transition: background-color 200ms, box-shadow 1250ms linear;
     box-shadow: 2px 2px 0px 0px $yellow;
 
     @media #{$bp-c-and-up} {

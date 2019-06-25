@@ -6,7 +6,6 @@
       :class="makeKey(n)"
       v-on:mouseover="mouseover"
     >
-      <span class="block__inner"></span>
     </div>
   </div>
 </template>
@@ -42,7 +41,7 @@ export default {
     }
   },
   mounted() {
-    setTimeout(() => this.transComplete(), 2250);
+    setTimeout(() => this.transComplete(), 2350);
   }
 };
 </script>
