@@ -1,6 +1,13 @@
 <template>
   <div :class="className(letter)">
-    <div v-for="n in 80" v-bind:key="makeKey(n)" :class="makeKey(n)"></div>
+    <div
+      v-for="n in 80"
+      v-bind:key="makeKey(n)"
+      :class="makeKey(n)"
+      v-on:mouseover="mouseover"
+    >
+      <span class="block__inner"></span>
+    </div>
   </div>
 </template>
 
@@ -23,10 +30,19 @@ export default {
     },
     transComplete: () => {
       document.documentElement.classList.add("letters-completed");
+    },
+    mouseover: e => {
+      const el = e.target;
+      const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+      el.style.backgroundColor = `#${randomColor}`;
+
+      setTimeout(() => {
+        el.removeAttribute("style");
+      }, 10000);
     }
   },
   mounted() {
-    setTimeout(() => this.transComplete(), 2000);
+    setTimeout(() => this.transComplete(), 2250);
   }
 };
 </script>
