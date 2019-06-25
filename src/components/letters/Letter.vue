@@ -38,7 +38,7 @@ export default {
 
       setTimeout(() => {
         el.removeAttribute("style");
-      }, 10000);
+      }, 5000);
     }
   },
   mounted() {
