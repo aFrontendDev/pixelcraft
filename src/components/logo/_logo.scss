@@ -1,18 +1,23 @@
-$letterHeight: 100px;
+@import "@/styles/_00-settings/variables.scss";
+
 
 .logo {
-  margin-top: 20vh;
+  margin-top: 10vh;
   margin-bottom: 80px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .para {
-  --letter-height: 100px;
+  --letter-height: 60px;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
   height: var(--letter-height);
   width: calc(var(--letter-height) * 5);
+
+  @media #{$bp-c-and-up} {
+    --letter-height: 100px;
+  }
 }

@@ -1,9 +1,17 @@
 
 .layout {
 
-  &.layout--a {
+  &.layout--style-a {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.layout__inner {
+  
+  .layout--style-a & {
+    max-width: $max-width;
+    margin: 0 $gw*2;
   }
 }

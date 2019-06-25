@@ -1,4 +1,4 @@
-
+@import "@/styles/_00-settings/variables.scss";
 
 .letter {
   display: grid;
@@ -193,7 +193,7 @@
 
   .block__inner {
     flex: 1;
-    background-color: #0a91e0;
+    background-color: $blue;
     transition: background-color 200ms ease-in-out;
   }
 
@@ -204,7 +204,11 @@
 
   .letters-completed & {
     transition: box-shadow 1250ms ease-in-out;
-    box-shadow: 4px 4px 0px 0px #d7da19;
+    box-shadow: 2px 2px 0px 0px $yellow;
+
+    @media #{$bp-c-and-up} {
+      box-shadow: 4px 4px 0px 0px $yellow;
+    }
   }
 }
 

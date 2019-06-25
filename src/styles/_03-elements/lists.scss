@@ -1,0 +1,26 @@
+
+.list {
+
+  &.list--style-a {
+    list-style: none;
+    
+    li {
+      position: relative;
+      margin: $vr*2 0;
+      padding-left: $gw*2;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: $yellow;
+      }
+    }
+  }
+}
