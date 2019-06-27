@@ -8,6 +8,10 @@
   margin: 0 1.5%;
   color: $blue;
   transition: color 200ms ease-in-out;
+
+  @media #{$bp-e-and-down} {
+    cursor: pointer;
+  }
 }
 
 .letter--p {
@@ -191,6 +195,10 @@
         transition-delay: #{$delay}ms;
       }
     }
+  }
+
+  &:focus {
+    outline: none;
   }
 
   .page-ready & {

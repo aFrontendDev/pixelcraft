@@ -7,7 +7,7 @@
     </header>
     <div class="section__body">
       <p>
-        I'm currently under contract until August (2019) but am always available for out of hours work for the right project and am free to talk, just get in touch via:
+        I'm currently <span class="keyword">under contract until mid August (2019)</span> but am always available for out of hours work for the right project and am free to talk, just get in touch via:
       </p>
       <ul class="list list--style-a">
         <li>email: <a href="mailto:andy@pixelcraft.ltd">andy@pixelcraft.ltd</a></li>
