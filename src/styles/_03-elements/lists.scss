@@ -23,4 +23,35 @@
       }
     }
   }
+
+  &.list--style-b {
+    display: flex;
+    list-style: none;
+    
+    li {
+      position: relative;
+      margin-right: $gw*2;
+      padding-right: $gw*2;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background-color: $yellow;
+      }
+
+      &:last-child {
+        margin-right: 0;
+        padding-right: 0;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
 }

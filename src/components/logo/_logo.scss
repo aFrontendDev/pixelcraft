@@ -2,7 +2,6 @@
 
 
 .logo {
-  margin-top: 10vh;
   margin-bottom: 80px;
   display: flex;
   flex-direction: column;
@@ -20,4 +19,15 @@
   @media #{$bp-c-and-up} {
     --letter-height: 100px;
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
+
+// .word-container {
+//   padding: 25px;
+//   background-color: #e6e6e6;
+//   border-radius: 10px;
+//   box-shadow: inset 0px 0px 11px rgba(0,0,0,0.7);
+// }

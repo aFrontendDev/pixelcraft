@@ -12,6 +12,75 @@
   @media #{$bp-e-and-down} {
     cursor: pointer;
   }
+
+  .letters-completed & {
+    @for $i from 1 through 8 {
+      $delay: random(1000);
+      animation: fadeColor 10000ms infinite;
+    }
+  }
+}
+
+
+.letter .block {
+  display: flex;
+  background-color: currentColor;
+  transform: translateX(50px);
+  opacity: 0;
+
+  @for $i from 1 through 8 {
+
+    @for $ii from 1 through 10 {
+      $delay: random(1000);
+      $timer: random(750);
+      $posX: random(15);
+      $transX: -#{$posX}px;
+      $transY: -#{$posX}px;
+
+      @if ($posX % 2 == 0) {
+        $transX: #{$posX}px;
+      }
+
+      @if ($ii % 2 == 0) {
+        $transY: #{$posX}px;
+      }
+
+      &[class*="a#{$i}-#{$ii}"] {
+        transform: translate($transX, $transY);
+        transition: opacity 100ms, transform #{$timer}ms linear;
+        transition-delay: #{$delay}ms;
+      }
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  .page-ready & {
+    opacity: 1;
+    transform: none;
+  }
+
+  .letters-completed & {
+    transition: background-color 200ms, box-shadow 1250ms linear;
+    box-shadow: 2px 2px 0px 0px $yellow;
+
+    @media #{$bp-c-and-up} {
+      box-shadow: 4px 4px 0px 0px $yellow;
+    }
+  }
+}
+
+@for $i from 1 through 8 {
+  $first: $i;
+
+  @for $ii from 1 through 10 {
+
+    .letter .a#{$i}-#{$ii} {
+      grid-area: a#{$i}-#{$ii};
+    }
+  }
 }
 
 .letter--p {
@@ -165,64 +234,30 @@
 }
 
 
-
-.letter .block {
-  display: flex;
-  background-color: currentColor;
-  transform: translateX(50px);
-  opacity: 0;
-
-  @for $i from 1 through 8 {
-
-    @for $ii from 1 through 10 {
-      $delay: random(1000);
-      $timer: random(750);
-      $posX: random(15);
-      $transX: -#{$posX}px;
-      $transY: -#{$posX}px;
-
-      @if ($posX % 2 == 0) {
-        $transX: #{$posX}px;
-      }
-
-      @if ($ii % 2 == 0) {
-        $transY: #{$posX}px;
-      }
-
-      &[class*="a#{$i}-#{$ii}"] {
-        transform: translate($transX, $transY);
-        transition: opacity 100ms, transform #{$timer}ms linear;
-        transition-delay: #{$delay}ms;
-      }
-    }
+@keyframes fadeColor {
+  0% {
+    color: $blue;
   }
 
-  &:focus {
-    outline: none;
+  50% {
+    color: $dark-blue;
   }
 
-  .page-ready & {
-    opacity: 1;
-    transform: none;
-  }
-
-  .letters-completed & {
-    transition: background-color 200ms, box-shadow 1250ms linear;
-    box-shadow: 2px 2px 0px 0px $yellow;
-
-    @media #{$bp-c-and-up} {
-      box-shadow: 4px 4px 0px 0px $yellow;
-    }
+  100% {
+    color: $blue;
   }
 }
 
-@for $i from 1 through 8 {
-  $first: $i;
+@keyframes fadeBg {
+  0% {
+    background-color: $blue;
+  }
 
-  @for $ii from 1 through 10 {
+  50% {
+    background-color: $dark-blue;
+  }
 
-    .letter .a#{$i}-#{$ii} {
-      grid-area: a#{$i}-#{$ii};
-    }
+  100% {
+    background-color: $blue;
   }
 }

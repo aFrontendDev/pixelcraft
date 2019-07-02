@@ -16,9 +16,9 @@
         During my time at Building Blocks I was fortunate enough to work on significant projects for some large brands including:
       </p>
       <ul class="list list--style-a">
-        <li>Adidas</li>
-        <li>Universal Studios Orlando (included working onsite)</li>
-        <li>United Airlines (onsite consultant)</li>
+        <li>adidas</li>
+        <li>Universal Studios Orlando (Manchester and onsite in Orlando)</li>
+        <li>United Airlines (onsite in Chicago)</li>
         <li>Butlins</li>
         <li>Many more...</li>
       </ul>

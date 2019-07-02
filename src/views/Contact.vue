@@ -9,7 +9,7 @@ import Logo from "@/components/logo/Logo.vue";
 import About from "@/components/about/About.vue";
 
 export default {
-  name: "home",
+  name: "contact",
   components: {
   }
 };
