@@ -1,8 +1,11 @@
 <template>
   <nav class="nav">
     <LogoSmall />
-    <router-link class="nav__link" to="/">Home</router-link>
-    <router-link class="nav__link" to="/about">About</router-link>
+    <div class="nav__links">
+      <router-link class="nav__link" to="/">Home</router-link>
+      <router-link class="nav__link" to="/about">About</router-link>
+      <router-link class="nav__link" to="/services">Services</router-link>
+    </div>
   </nav>
 </template>
 

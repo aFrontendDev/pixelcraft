@@ -1,17 +1,15 @@
 @import "@/styles/_00-settings/variables.scss";
 
-
 .logo-small {
 
 }
 
 .logo-small__icons {
   display: flex;
-  padding: 5px;
 
   svg {
-    width: 25px;
-    min-height: 31px; // IE
+    width: 15px;
+    min-height: 19px; // IE
     margin-right: 5px;
     fill: $yellow;
 

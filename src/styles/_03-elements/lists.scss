@@ -27,21 +27,35 @@
   &.list--style-b {
     display: flex;
     list-style: none;
+
+    @media #{$bp-c-and-down} {
+      flex-direction: column;
+      text-align: center;
+    }
     
     li {
       position: relative;
-      margin-right: $gw*2;
-      padding-right: $gw*2;
-
-      &:before {
-        content: '';
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 2px;
-        height: 100%;
-        background-color: $yellow;
+      margin-bottom: $vr*3;
+      padding-bottom: $vr*3;
+      border-bottom: solid 2px $yellow;
+      
+      @media #{$bp-c-and-up} {
+        margin: 0;
+        padding: 0;
+        margin-right: $gw*2;
+        padding-right: $gw*2;
+        border: none;
+        
+        &:before {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 2px;
+          height: 100%;
+          background-color: $yellow;
+        }
       }
 
       &:last-child {

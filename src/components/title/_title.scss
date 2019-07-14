@@ -1,0 +1,31 @@
+@import "@/styles/_00-settings/variables.scss";
+
+.page-title {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.page-title__main {
+  font-family: '8bit_wondernominal';
+  color: $yellow;
+  font-size: 30px;
+  display: inline-block;
+  position: relative;
+  line-height: 45px;
+
+  @media #{$bp-d-and-up} {
+    font-size: 40px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    width: calc(100% + 30px);
+    height: 4px;
+    background-color: $blue;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -3px;
+  }
+}

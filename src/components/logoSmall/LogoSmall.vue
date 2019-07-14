@@ -1,12 +1,12 @@
 <template>
-  <div class="logo-small">
+  <router-link class="logo-small" to="/">
     <span class="visually-hidden">PXL</span>
     <div class="logo-small__icons" role="presentation">
       <P />
       <X />
       <L />
     </div>
-  </div>
+  </router-link>
 </template>
 
 <style lang="scss">
