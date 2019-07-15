@@ -16,7 +16,7 @@
   .letters-completed & {
     @for $i from 1 through 8 {
       $delay: random(1000);
-      animation: fadeColor 10000ms infinite;
+      // animation: fadeColor 10000ms infinite;
     }
   }
 }
