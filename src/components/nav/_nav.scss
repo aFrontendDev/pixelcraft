@@ -11,5 +11,25 @@
 }
 
 .nav__link {
-  margin-left: $gw;
+  position: relative;
+  margin-left: $gw * 1.5;
+  padding-left: $gw * 1.5;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100%;
+    height: 15px;
+    width: 1px;
+    background-color: #fff;
+  }
+
+  &:first-child {
+
+    &:after {
+      display: none;
+    }
+  }
 }
