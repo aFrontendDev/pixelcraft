@@ -16,7 +16,7 @@
         The usual process for a small to medium business will be a couple of meetings prior to any work starting to gather your requirements, discuss potential design ideas and get a timeline for design, build and delivery. I will always be fleixble during the process to meet your needs and will respond to any changes that arise to fulfil your requirements.
       </p>
       <p>
-        Please get in touch via phone or email to discuss further: <a href="tel:01615328288">0161 5328 288</a>, <a href="mailto:andy@pixelcraft.ltd" target="_blank">andy@pixelcraft.ltd</a>
+        Please get in touch to discuss further: <a href="mailto:andy@pixelcraft.ltd" target="_blank">andy@pixelcraft.ltd</a>
       </p>
     </div>
   </section>

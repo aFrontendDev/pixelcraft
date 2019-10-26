@@ -5,7 +5,7 @@
     </div>
     <div class="footer__contact">
       <ul class="footer__list">
-        <li>
+        <!-- <li>
           <a class="footer__link" href="tel:01615328288">
             <span class="footer__icon">
               <span class="visually-hidden">Phone</span>
@@ -13,7 +13,7 @@
             </span>
             <span class="footer__link-text">0161 532 8288</span>
           </a>
-        </li>
+        </li> -->
         <li>
           <a class="footer__link" href="mailto:andy@pixelcraft.ltd" target="_blank">
             <span class="footer__icon">
