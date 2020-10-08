@@ -15,3 +15,55 @@
 @import "./_04-objects/layout.scss";
 
 @import "./_05-components/sections.scss";
+
+.video {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    cursor: url("/img/face.png"), auto;
+  }
+}
+
+.larry {
+  display: inline-block;
+  font-size: 100px;
+  margin: 30px 0;
+  text-align: center;
+  background: linear-gradient(270deg, #ff0000, #0011ff, #d7ff00, #ff00f5);
+  background-size: 800% 800%;
+  animation: bgAnim 30s ease infinite;
+}
+
+@keyframes colorAnim {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes bgAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

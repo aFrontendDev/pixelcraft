@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import About from "./views/About.vue";
 import Services from "./views/Services.vue";
+import Friday from "./views/Friday.vue";
 
 Vue.use(Router);
 
@@ -13,17 +14,22 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Home,
     },
     {
       path: "/about",
       name: "about",
-      component: About
+      component: About,
     },
     {
       path: "/services",
       name: "services",
-      component: Services
-    }
-  ]
+      component: Services,
+    },
+    {
+      path: "/friday",
+      name: "friday",
+      component: Friday,
+    },
+  ],
 });
