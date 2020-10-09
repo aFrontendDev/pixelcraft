@@ -13,9 +13,11 @@
           ></iframe>
         </div>
 
-        <a href="http://shorturl.at/efotU" target="_blank" class="larry"
-          >The Adventures of Larry Duarte!!!</a
-        >
+        <div class="larry">
+          <a href="http://shorturl.at/efotU" target="_blank" class="larry-link"
+            >The Adventures of Larry Duarte!!!</a
+          >
+        </div>
       </div>
     </div>
   </div>
